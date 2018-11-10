@@ -20,3 +20,11 @@ from testp.models import userform
 class listview(viewsets.ModelViewSet):
     queryset = userform.objects.all()
     serializer_class = userserializers
+    
+    
+    
+    
+def index(request):
+    return HTTPResponse("hello")
+    
+    
